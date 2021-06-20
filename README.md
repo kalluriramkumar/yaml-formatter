@@ -1,4 +1,4 @@
-##**YAML Formatter**
+**YAML Formatter**
 
 A command line tool that formats the yaml file.
 
