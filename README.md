@@ -1,4 +1,5 @@
-#yaml formatter
+##**YAML Formatter**
+
 A command line tool that formats the yaml file.
 
 ## Usage
@@ -8,6 +9,10 @@ A simple usage example:
 ```shell
 dart bin/main.dart -p <yaml file path>
 ```
+
+## Known Issues
+
+Quotes are not preserved
 
 ## Features and bugs
 
