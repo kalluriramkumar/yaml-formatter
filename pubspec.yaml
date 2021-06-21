@@ -1,14 +1,18 @@
 name: yaml_formatter
 description: A starting point for Dart libraries or applications.
 version: 1.0.0
-# homepage: https://www.example.com
+repository: https://github.com/kalluriramkumar/yaml-formatter
 
 environment:
   sdk: '>=2.12.0 <3.0.0'
 
+executables:
+  yaml-formatter: main
+
 dependencies:
   yaml: ^3.1.0
   path: ^1.8.0
+  args: ^2.1.1
 
 dev_dependencies:
   pedantic: ^1.10.0
