@@ -1,5 +1,5 @@
 name: yaml_formatter
-description: A starting point for Dart libraries or applications.
+description: A simple command line tool that formats the yaml file and writes back to file.
 version: 1.0.0
 repository: https://github.com/kalluriramkumar/yaml-formatter
 
