@@ -23,3 +23,9 @@ jobs:
         with:
           dryRunOnly: true
           credentialJson: ${{ secrets.CREDENTIAL_JSON }}
+          
+      
+      - name: publish dart package
+        uses: k-paxian/dart-package-publisher@master
+        with:
+          credentialJson: ${{ secrets.CREDENTIAL_JSON }}
