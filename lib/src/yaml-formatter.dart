@@ -19,11 +19,11 @@ class YAMLFormatter {
     }
     // Clears the file content.
     file.writeAsStringSync('');
-    formatter(_yamlMap);
+    _formatter(_yamlMap);
   }
 
   /// Formats the YAML file.
-  void formatter(Map map) {
+  void _formatter(Map map) {
     // Increments the counter variable.
     counter++;
     var itr = map.keys.iterator;
@@ -33,7 +33,7 @@ class YAMLFormatter {
       if (value is Map) {
         file.writeAsStringSync('${' ' * (counter * 2)}$element:\n',
             mode: FileMode.append);
-        formatter(value);
+        _formatter(value);
         continue;
       }
       if (element is String) {

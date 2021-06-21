@@ -7,7 +7,7 @@ A command line tool that formats the yaml file.
 A simple usage example:
 
 ```shell
-dart bin/main.dart -p <yaml file path>
+pub run yaml-formatter
 ```
 
 ## Known Issues
