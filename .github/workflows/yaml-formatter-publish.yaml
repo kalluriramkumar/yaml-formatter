@@ -21,7 +21,7 @@ jobs:
       - name: add cred
         run: |
           mkdir -p ~/.pub-cache
-          echo ${{ secrets.CREDENTIAL_JSON }} > ~/.pub-cache/credential.json
+          echo ${{ secrets.CREDENTIAL_JSON }} > ~/.pub-cache/credentials.json
         
       - name: publish
         run: dart pub publish -f
