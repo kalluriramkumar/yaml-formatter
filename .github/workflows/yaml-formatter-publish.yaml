@@ -17,22 +17,16 @@ jobs:
 
       - name: Analyze source code
         run: dart analyze
-
-      - name: dry run publish dart package
-        uses: k-paxian/dart-package-publisher@master
-        with:
-          dryRunOnly: true
-          credentialJson: ${{ secrets.CREDENTIAL_JSON }}
-          
       
-      - name: publish dart package
-        uses: k-paxian/dart-package-publisher@master
-        with:
-          skiptests: false
-          dryRunOnly: false
-          credentialJson: ${{ secrets.CREDENTIAL_JSON }}
-          accessToken: ${{ secrets.OAUTH_ACCESS_TOKEN }}
-          refreshToken: ${{ secrets.OAUTH_REFRESH_TOKEN }}
+      - name: add cred
+        run: |
+          mkdir -p ~/.pub-cache
+          echo ${{ secrets.CREDENTIAL_JSON }} > ~/.pub-cache/credential.json
+        
+      - name: publish
+        run: dart pub publish -f
+
+      
           
           
           
