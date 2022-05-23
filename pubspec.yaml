@@ -1,6 +1,6 @@
 name: yaml_formatter
 description: A simple command line tool that formats the yaml file and writes back to file.
-version: 1.0.1
+version: 1.0.2
 repository: https://github.com/kalluriramkumar/yaml-formatter
 
 environment:
